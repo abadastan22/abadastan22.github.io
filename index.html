@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stan Abada</title>
+<meta name="description" content="Stan O. Abada: resume, LinkedIn and GitHub.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+/* Layout: single centered column card-less stack; name on top, three full-width action buttons below. */
+:root {
+  --bg: #f3f5f7;
+  --fg: #11202b;
+  --muted: #55646f;
+  --line: #d5dce2;
+  --surface: #ffffff;
+  --accent: #0b5c8f;
+  --accent-fg: #ffffff;
+  --font-display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e171d; --fg: #eaf0f4; --muted: #9aa9b4; --line: #26353f;
+    --surface: #15222b; --accent: #5db4ea; --accent-fg: #07161f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e171d; --fg: #eaf0f4; --muted: #9aa9b4; --line: #26353f;
+  --surface: #15222b; --accent: #5db4ea; --accent-fg: #07161f; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-body);
+  font-size: 16px; line-height: 1.5;
+  padding-block: 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 440px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+header { display: flex; flex-direction: column; gap: 8px; }
+.eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+h1 { font-family: var(--font-display); font-size: 2.4rem; line-height: 1.05; margin: 0; letter-spacing: -.02em; text-wrap: balance; }
+.role { color: var(--muted); margin: 0; text-wrap: balance; }
+nav { display: flex; flex-direction: column; gap: 12px; }
+.btn {
+  display: flex; align-items: center; gap: 16px; min-width: 0;
+  padding: 18px 20px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface); color: var(--fg); text-decoration: none;
+  transition: border-color .15s, transform .15s;
+}
+.btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+.btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+.btn svg { flex: none; width: 28px; height: 28px; fill: currentColor; }
+.btn .txt { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.btn .label { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; }
+.btn .sub { font-size: 13px; opacity: .8; overflow-wrap: anywhere; }
+.btn .arrow { flex: none; font-size: 1.3rem; }
+footer { font-size: 13px; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+</style>
+
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">Tampa, Florida</span>
+    <h1>Stan O. Abada</h1>
+    <p class="role">Director, Engineering Program Management. Connected devices and product development.</p>
+  </header>
+
+  <nav aria-label="Choose where to go">
+    <a class="btn primary" id="btn-resume" href="Stan_Abada_Resume.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v14H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13v1.5h8V13H8zm0 3.5V18h8v-1.5H8z"/></svg>
+      <span class="txt"><span class="label">View resume</span><span class="sub">PDF</span></span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="btn" id="btn-linkedin" href="https://www.linkedin.com/in/stanabada/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2zM8 19H5V9.5h3V19zM6.5 8.2a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5zM19 19h-3v-4.6c0-1.1 0-2.5-1.5-2.5S13 13.100 13 14.300V19h-3V9.500h2.800v1.300h.1c.4-.8 1.400-1.500 2.800-1.500 3 0 3.600 2 3.600 4.600V19z"/></svg>
+      <span class="txt"><span class="label">LinkedIn</span><span class="sub">linkedin.com/in/stanabada</span></span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="btn" id="btn-github" href="https://github.com/abadastan22" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.500 11.500 0 0 0-3.640 22.410c.580.110.790-.250.790-.560v-2c-3.200.700-3.880-1.540-3.880-1.540-.520-1.330-1.280-1.690-1.280-1.690-1.040-.710.080-.700.080-.700 1.150.080 1.760 1.180 1.760 1.180 1.030 1.760 2.700 1.250 3.360.960.100-.750.400-1.250.730-1.540-2.560-.290-5.240-1.280-5.240-5.690 0-1.260.450-2.290 1.180-3.100-.120-.290-.510-1.470.110-3.060 0 0 .970-.310 3.170 1.180a11 11 0 0 1 5.780 0c2.200-1.490 3.170-1.180 3.170-1.180.630 1.590.230 2.770.110 3.060.740.810 1.180 1.840 1.180 3.100 0 4.420-2.690 5.390-5.260 5.670.410.360.780 1.060.780 2.140v3.170c0 .310.210.680.800.560A11.500 11.500 0 0 0 12 .5z"/></svg>
+      <span class="txt"><span class="label">GitHub</span><span class="sub">github.com/abadastan22</span></span>
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
+  </nav>
+
+</main>
+</body>
+</html>
